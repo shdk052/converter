@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <title>Conventer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='exchange.png') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Conventer</h1>
+    <h2>בחרו קובץ והמירו אותו בקלות 📦🚀</h2>
+
+    <form method="POST" enctype="multipart/form-data" action="/con">
+        <label for="file-upload" class="custom-file-upload">
+            בחר קובץ
+        </label>
+        <input id="file-upload" type="file" name="image" required>
+
+        <select name="format" id="select">
+            <option value="png">PNG</option>
+            <option value="jpg">JPG</option>
+            <option value="webp">WEBP</option>
+            <option value="gif">GIF</option>
+            <option value="ico">ICO</option>
+        </select>
+
+        <button type="submit" class="button-small" >המר</button>
+        <a id="download-btn" href="#" style="display:none;" class="button-small">⬇️ הורד את הקובץ</a>
+    </form>
+</div>
+
+</body>
+</html>
