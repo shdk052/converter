@@ -5,9 +5,9 @@ description = ""
 authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.11.8"
 flask = "2.3.3"
-Pillow = "10.1.0"
+Pillow = "10.0.1"
 
 [build-system]
 requires = ["poetry-core"]
